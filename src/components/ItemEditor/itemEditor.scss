@@ -1,0 +1,32 @@
+.item-editor-container {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(71, 61, 123, 0.1) 0px 4px 12px;
+    background: var(--white);
+    height: fit-content;
+}
+
+.item-editor-container input {
+    height: 2rem;
+    padding: 0 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+
+    &:active {
+        box-shadow: rgba(71, 61, 123, 0.1) 0px 4px 12px;
+    }
+}
+
+.item-editor-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.save-button {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.6s ease;
+    gap: 0.5rem;
+}

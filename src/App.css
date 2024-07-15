@@ -1,0 +1,8 @@
+.main-container {
+  height: 12rem;
+  background:
+  linear-gradient(var(--nav-background-colour), var(--nav-background-colour)) top/100% 12rem, 
+  linear-gradient(to bottom left, black 50%, transparent 50%) 0px 81px / 100% 14px;
+  background-color:#eeedf1;
+  background-repeat:no-repeat;
+}

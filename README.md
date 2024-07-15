@@ -1,64 +1,43 @@
-# Qikserve's Dashboard Menu challenge
+<h4 align="center"><a href="https://dashboard-menu-msawaguchi.netlify.app/" target="_blank">Live Preview</a></h4>
+<p align="center">
+  <img src="src/assets/presentation.png" alt="Dashboard Menu">
+</p>
 
-This challenge consists of building a react application to allow managers managing a menu in a restaurant.
-Of course, we are gonna build limited features as a whole dashboard would take too much time :D
+## About 
 
-Restaurant Data should be consumed from the provided json below. Do not mock the json's, fetch the data from url below.
-[https://cdn-dev.preoday.com/senior-fe-menu-challenge.json](https://cdn-dev.preoday.com/senior-fe-menu-challenge.json)
+React application to allow managers managing a menu in a restaurant.
+Some features:
+- Dynamic rendering of menu items directly from the URL.
+- Implemented infinite scroll to optimize page loading by lazily rendering items.
+- Enhanced user interaction: Hovering over an item displays an "edit" button, providing instant access to detailed item information on the right side of the page.
+- Search menu by item name.
+- Mobile friendly.
 
+<p align="center">
+  <img src="src/assets/dashboardmenu.gif" alt="Dashboard menu">
+</p>
 
-## Deliveries
-- Please deploy the solution in a shared URL so i can see the results without needing to run.
-- Please fork this repository on your account and invite ronaldo.zanoni@qikserve.com, felipe.loge@qikserve.com and caio.ricci@qikserve.com.
+## How To Use
 
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
+```bash
+# Clone this repository
+$ git clone https://github.com/msawaguchi/qskitchen.git
 
-## UI - Application
+# Go into the repository
+$ cd qskitchen
 
-I expect your application to be able to:
-- Render all items from URL above (I'm not expliciting how)
-- - Please don't use paginations. I don't to click on page to see its contents.
-- An item should be showing:
-- - Item name
-- - Item image (if available)
-- When hovering an item, i would like to see an "edit" button
-- Clicking on "edit" button, i would like to see the item's details on right side.
-- I don't expect to see lags in the application.
+# Install dependencies
+$ npm install
 
-An example of how it is in our platform currently:
-![MicrosoftTeams-image (118)](https://github.com/qsengineers/dashboard-large-menu/assets/134649881/57876e34-8d5b-44ff-b291-f08f780a303c)
-
-
-
-## Item example
-
+# Run the app
+$ npm start
 ```
-{
-        "id": 1529509,
-        "externalId": "5023377855405,1",
-        "name": "WECOMPJACKS MAGIC AP ",
-        "internalName": "WECOMPJACKS MAGIC AP ",
-        "description": "WE Comp Jacks Magic All Purpose 60L",
-        "deliveryFlag": 1,
-        "pickupFlag": 1,
-        "seatFlag": 0,
-        "price": 5.75,
-        "visible": 1,
-        "availabilityType": "AVAILABLE_NOW",
-        "sku": "I1529509",
-        "created": "2020-03-26T14:30:43.000+0000",
-        "updated": "2020-11-11T18:59:15.000+0000",
-        "images": [
-            {
-                "id": 557839,
-                "itemId": 1529509,
-                "image": "/usr/venue/9043/menuItem/5e7cbfccc61d5.png",
-                "position": 0,
-                "created": "2020-03-26T14:44:29.000+0000",
-                "updated": "2020-03-26T14:44:29.000+0000"
-            }
-        ],
-        "availableForPublish": true,
-        "available": true
-    }
-```
+
+## Technologies
+
+- React
+- Typescript
+- ES6+
+- SCSS

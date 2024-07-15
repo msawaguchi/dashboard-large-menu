@@ -1,0 +1,60 @@
+:root {
+  --background-colour: #f6f7fb;
+  --primary-colour: #422dcd;
+  --primary-colour-hover: #2512a2;
+  --secondary-color: #6e7590;
+  --nav-background-colour: #0a1233;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-colour);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--primary-colour);
+  color: var(--white);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-colour-hover);
+}
+
+input:focus{
+  outline: none;
+}
+
+::placeholder {
+  color: var(--secondary-color);
+  opacity: 1; 
+}
+
+::-ms-input-placeholder { 
+  color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(210, 208, 218);
+  border-radius: 10px;
+}
